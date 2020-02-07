@@ -12,10 +12,8 @@ grade = 10
 
 # create table
 sql = "INSERT INTO students (name, age, gradeLevel) VALUES ('Jerome', 15,10)"
-sql2 = "SELECT * from students"
 
 cur.execute(sql)
-cur.execute(sql2)
 
 rows = cur.fetchall()
 for row in rows:

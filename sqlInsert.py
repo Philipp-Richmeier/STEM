@@ -7,7 +7,7 @@ db = mysql.connector.connect(host="192.168.0.131", user="phiric21", passwd="pass
 cur = db.cursor(dictionary=True)
 
 # create table
-sql = "INSERT INTO students (name, age, gradeLevel) VALUES ('Jerome', 15,10)"
+sql = "INSERT INTO students (name, age, gradeLevel) VALUES ('Jerome', '15', '10')"
 
 cur.execute(sql)
 

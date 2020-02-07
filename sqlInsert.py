@@ -6,10 +6,6 @@ db = mysql.connector.connect(host="192.168.0.131", user="phiric21", passwd="pass
 # prepare a cursor object using cursor() method
 cur = db.cursor(dictionary=True)
 
-name='Jerome'
-age = 14
-grade = 10
-
 # create table
 sql = "INSERT INTO students (name, age, gradeLevel) VALUES ('Jerome', 15,10)"
 
